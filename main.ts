@@ -5,7 +5,11 @@ import { Product } from "./Product";
 let GetProductList: () => Product[];
 
 GetProductList = () => {
+    //ProductList is an array of objects of type Product
     let ProductList: Product[] = [];
+
+    //populating the array with hardcoded values
+    //this block can be replaced with data coming from the database
     ProductList.push({ id: 1, name: "product1", qty: 20, isAvailable: true });
     ProductList.push({ id: 2, name: "product2", qty: 30, isAvailable: true });
     ProductList.push({ id: 3, name: "product3", qty: 40, isAvailable: true });
