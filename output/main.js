@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const FilterConditionEnum_1 = require("./FilterConditionEnum");
-//singnature of the GetProductList function
+//signature of the GetProductList function
 let GetProductList;
 GetProductList = () => {
     let ProductList = [];
@@ -43,7 +43,11 @@ console.log("---------------------------");
 let IncreaseQtyBy;
 IncreaseQtyBy = (qty) => {
     let FinalResult;
-    FinalResult = AllProductList.map((item) => (Object.assign(Object.assign({}, item), { qty: item.qty + qty, isAvailable: item.qty + qty > 0 ? true : false })));
+    FinalResult = AllProductList.map((item) => ({
+        ...item,
+        qty: item.qty + qty,
+        isAvailable: item.qty + qty > 0 ? true : false
+    }));
     return FinalResult;
 };
 console.log("-------Increase All Product Qty By 50-------");
