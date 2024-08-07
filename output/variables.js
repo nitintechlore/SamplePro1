@@ -37,4 +37,10 @@ let myCar = {
     mileage: 12000 // `Required` forces mileage to be defined
 };
 console.log(myCar);
+//3. keys are strings (names) and the values are numbers (ages).
+const nameAgeMap = {
+    'Alice': 21,
+    'Bob': 25
+};
+console.log(nameAgeMap);
 //# sourceMappingURL=variables.js.map
