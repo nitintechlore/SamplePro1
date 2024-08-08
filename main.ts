@@ -1,6 +1,7 @@
 import { FilterCondition } from "./FilterConditionEnum";
 import { Product } from "./Product";
 
+
 //signature of the GetProductList function
 let GetProductList: () => Product[];
 

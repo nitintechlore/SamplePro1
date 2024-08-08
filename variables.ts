@@ -5,6 +5,7 @@ let num:number=1450.45;
 let decnum: bigint = 45656454n; // Note the 'n' at the end to denote a bigint literal
 let flag:boolean=true;
 
+
 //Implicit Type - guess type from data
 let firstName="Nitin";
 console.log(typeof(firstName));
