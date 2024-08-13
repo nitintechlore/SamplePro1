@@ -1,13 +1,13 @@
 //Union Types
-type alphaNumbers = (number | string);
+type AlphaNumbers = (number | string);
 
-const AddConcatNumStr = (x: alphaNumbers, y: alphaNumbers): alphaNumbers => {
-    let result: alphaNumbers = ''
+const addConcatNumStr = (x: AlphaNumbers, y: AlphaNumbers): AlphaNumbers => {
+    let result: AlphaNumbers = ''
 
     if (typeof x === 'string' && typeof y === 'string') {
         result = x + '-' + y
     }
-    else if (typeof x == 'number' && typeof y == 'number') {
+    else if (typeof x === 'number' && typeof y === 'number') {
         result = x + y
     }
 
@@ -15,9 +15,9 @@ const AddConcatNumStr = (x: alphaNumbers, y: alphaNumbers): alphaNumbers => {
 }
 
 console.log('---Add Numbers : 20 and 30 -----')
-console.log(AddConcatNumStr(20, 30))
+console.log(addConcatNumStr(20, 30))
 console.log('--------------------------------')
 
 console.log('---Concat String by - : Str1 and Str2 -----')
-console.log(AddConcatNumStr('Str1', 'Str2'))
+console.log(addConcatNumStr('Str1', 'Str2'))
 console.log('--------------------------------')
