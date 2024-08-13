@@ -1,5 +1,5 @@
-export enum FilterCondition{
-   GreaterThan="greater than",
-   LessThan="less than",
-   EqualTo="equal"
+export enum FilterCondition {
+   GreaterThan = 'greaterThan',
+   LessThan = 'lessThan',
+   EqualTo = 'equal'
 };

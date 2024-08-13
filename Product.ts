@@ -1,7 +1,6 @@
-export interface Product
-{
+export interface Product {
     id: number,
-    name:string,
-    qty:number,
-    isAvailable:boolean  
+    name: string,
+    qty: number,
+    isAvailable: boolean
 }
